@@ -108,7 +108,7 @@
 ```
 
 ## 🚀 線上 Demo
-[![專案Demo](./screenshots/demo.mp4)](你的部署網址或影片連結)
+[![專案Demo](./screenshots/demo.mp4)]
 
 ## 📦 本地安裝
 
