@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "country":"Japan",
+        "city": "Fujiyoshida",
+        "name": "Kanadorii",
+        "imgName": "fuji-mt.jpeg",
+        "quote": "站在金鳥居下仰望富士山，那一刻時間彷彿靜止了。",
+        "mark":"註：鳥居本身是神域與俗世的分界，穿過鳥居即代表進入神的領域。現今所見的朱漆鐵筋鳥居，是昭和31年（1956年）重建的。鳥居下方懸掛的注連繩（しめなわ）採用「逆手」編法（左右兩端下垂），被認為具有阻擋災厄、強化結界的作用。",
+        "alt": "日本富士吉田市的金鳥居，朱紅色的巨大鳥居矗立在街道盡頭，背景是雄偉的富士山"
+    },
+    {
+        "id": 2,
+        "country":"Japan",
+        "city": "Fujiyoshida",
+        "name": "Retro street",
+        "imgName": "fuji-st.jpeg",
+        "quote": "古樸老街盡頭，富士山頂皚皚白雪與飛揚的煙雲交織，靜默地守護著這份遺世的溫柔。",
+        "alt": "日本富士吉田市的復古老街，傳統日式建築排列兩側，街道盡頭可以清楚看到富士山"
+    },
+    {
+        "id": 3,
+        "country":"South Korea",
+        "city": "Gwangjin",
+        "name": "Children's Grand Park",
+        "imgName": "blooming1.jpeg",
+        "quote": "夜晚獨自漫步在兒童公園，驚見染井吉野櫻盛開——春天，來敲門了。",
+        "alt": "首爾兒童大公園夜晚的櫻花盛開景象，染井吉野櫻在燈光照耀下呈現夢幻粉色"
+    },
+    {
+        "id": 4,
+        "country":"South Korea",
+        "city": "Yongsan",
+        "name": "N Seoul Tower",
+        "imgName": "seoul-tower.jpeg",
+        "quote": "每次走在首爾街頭，只要看見南山塔，就覺得安心。它不像地標，更像一個靜靜陪著這座城市的熟人。",
+        "alt": "首爾南山塔夜景，塔身發光矗立在山頂，俯瞰整個首爾市區的萬家燈火"
+    },
+    {
+        "id": 5,
+        "country":"South Korea",
+        "city": "Sinsa-dong",
+        "name": "Garosu-gil",
+        "imgName": "monalisa.jpeg",
+        "quote": "轉角遇見蒙娜麗莎，原來她也在逛街。",
+        "alt": "首爾新沙洞林蔭道街頭壁畫，蒙娜麗莎畫像出現在建築外牆上，形成趣味街景"
+    },
+    {
+        "id": 6,
+        "country":"Taiwan",
+        "city": "Taipei",
+        "name": "Songshan Cultural and Creative Park",
+        "imgName": "taipeisky.jpeg",
+        "quote": "抬頭看見一隻鯨魚，在粉紅色的夕陽海裡慢慢游過",
+        "alt": "台北松山文創園區黃昏景色，天空呈現粉紅色漸層，雲朵形狀宛如鯨魚"
+    },
+    {
+        "id": 7,
+        "country":"South Korea",
+        "city": "Seogyo-dong",
+        "name": "만만코코로",
+        "imgName": "magichouse.jpeg",
+        "quote": "這棟建築讓我想起湯婆婆的油屋——雜亂中自有秩序，彷彿下個轉角就會遇見無臉男。",
+        "alt": "首爾西橋洞的만만코코로建築，外觀錯綜複雜充滿層次感，帶有奇幻氛圍"
+    },
+    {
+        "id": 8,
+        "country":"Japan",
+        "city": "Taito",
+        "name": "Hozomon",
+        "imgName": "hozomon.jpeg",
+        "quote": "昭和時代在小舟町停了下來。斑駁的看板、吱呀作響的木門，都是時間捨不得帶走的風景。",
+        "alt": "東京台東區淺草寺的寶藏門，傳統日本寺廟建築，門下掛著巨大燈籠"
+    },
+    {
+        "id": 9,
+        "country":"Japan",
+        "city": "Taitō",
+        "name": "Goju-no-To",
+        "imgName": "goju-no-To.jpeg",
+        "quote": "五重塔靜靜站著，是淺草天空最古老的筆跡。",
+        "alt": "淺草寺的五重塔，傳統日式佛塔建築，在藍天襯托下顯得莊嚴肅穆"
+    },
+    {
+        "id": 10,
+        "country":"Japan",
+        "city": "Taitō",
+        "name": "Asakusa",
+        "imgName": "asakusa.jpeg",
+        "quote": "卍，象徵吉祥與萬德",
+        "mark":"註：天水桶日本傳統的防火設施，平時用來收集雨水，以便在發生火災時作為初期滅火的水源。",
+        "alt": "淺草寺境內的天水桶，傳統木製消防水桶，上面刻有寺廟標誌"
+    },
+    {
+        "id": 11,
+        "country":"Macau",
+        "city": "Avenida Dr.Sun Yat-Sen",
+        "name": "Harbourview",
+        "imgName": "harbourview.jpeg",
+        "quote": "澳門的街角，葡式建築遇見現代壁畫——兩種美撞在一起，卻意外地合拍。",
+        "alt": "澳門孫逸仙博士大馬路街景，葡萄牙風格建築與現代街頭壁畫相互輝映"
+    },
+    {
+        "id": 12,
+        "country":"Macau",
+        "city": "Cotai Strip",
+        "name": "The Londoner",
+        "imgName": "londoner.jpeg",
+        "quote": "天使降落在倫敦人商場——周圍是購物的喧囂，她卻自帶一份神聖的寧靜。細節精緻得讓人忘了呼吸。",
+        "alt": "澳門倫敦人酒店內部裝飾，天使雕像佇立其中，周圍是歐式奢華建築細節"
+    },
+    {
+        "id": 13,
+        "country":"Macau",
+        "city": "Santo António",
+        "name": "Ruins of St. Paul’s",
+        "imgName": "ruins.jpg",
+        "quote": "大火燒盡後的大三巴牌坊，經歷百年仍堅韌地矗立在此，寂靜地表達出了——時間帶不走的，才是靈魂。",
+        "mark":"註：聖保祿教堂附屬於1594年成立的聖保祿學院，該學院是遠東地區第一所西式大學，主要培養前往日本、中國、越南等地傳教的傳教士。教堂建築由意大利籍耶穌會士斯皮諾拉神父主持設計，整個工程歷時30餘年，前壁是最後落成的部分。然而，這座宏偉建築命運多舛。1835年1月26日，一場大火燒毀了聖保祿學院及其附屬教堂，僅剩下教堂的正面前壁、大部分地基以及教堂前的石階。",
+        "alt": "澳門大三巴牌坊，聖保祿教堂正面牆壁遺跡，雕刻精細的巴洛克式建築立面"
+    },
+    {
+        "id": 14,
+        "country":"Macau",
+        "city": "São Lázaro",
+        "name": "St. Lazarus’ Parish",
+        "imgName": "lazarus.jpeg",
+        "quote": "瘋人院與教堂——人間的苦難，和苦難裡的光，在同一片土地上並肩而立。",
+        "mark":"註：1568年，澳門首任主教賈尼勞創辦了望德聖母堂，並在教堂旁設立一所麻瘋病院，專門收容麻瘋病人。由於教堂與麻瘋病院相鄰，華人稱之為「瘋堂」或「發瘋寺」，附近街道至今仍保留「瘋堂斜巷」、「瘋堂新街」等名稱。在明清文獻中，亦有相關記載。《澳門紀略》提到：「東南城外，有發瘋寺，內居瘋蕃，外衛以兵，月有廩」。《香山縣志》也稱「東南城外別為麻瘋寺」，可見當時這座教堂與病院已為人所知。",
+        "alt": "澳門望德聖母堂，又稱瘋堂，黃色外牆的教堂建築，具有歷史意義的宗教場所"
+    }
+]
