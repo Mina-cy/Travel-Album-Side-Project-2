@@ -70,41 +70,13 @@
 ### 1️⃣ 動態圖片路徑解析
 採用 `new URL(path, import.meta.url).href` 技術，完美解決 Vite 開發與生產環境的圖片路徑問題，確保圖片在任何環境都能正確載入。
 
-```javascript
-const getImgUrl = (imgName) => {
-  return new URL(`../assets/images/${imgName}`, import.meta.url).href
-}
-```
-
 ### 2️⃣ 狀態管理與持久化
 使用 **Pinia** 建立 `LikeStore` 集中管理按讚狀態，並結合 **LocalStorage** 實現資料持久化，頁面重整後按讚記錄依然存在，使用者體驗更完整。
-
-```javascript
-toggleLike(id) {
-  const index = this.likedIds.indexOf(id)
-  if (index === -1) {
-    this.likedIds.push(id)
-  } else {
-    this.likedIds.splice(index, 1)
-  }
-  localStorage.setItem('user_likes', JSON.stringify(this.likedIds))
-}
-```
 
 ### 3️⃣ 多層次動畫整合
 - **AOS 滾動動畫**：頁面元素進場時觸發淡入、滑入效果
 - **VueUse 視差**：滑鼠移動帶動背景微動，增加沉浸感
 - **Transition 轉場**：頁面切換時的流暢過渡動畫
-
-```javascript
-const { x, y } = useMouse()
-const { width } = useWindowSize()
-
-const parallax = computed(() => {
-  const mx = (x.value / width.value - 0.5) * 30
-  return { transform: `translateX(${mx}px)` }
-})
-```
 
 ### 4️⃣ 元件化架構
 - **Card.vue**：藝廊卡片元件，接收 Props 渲染照片資訊
