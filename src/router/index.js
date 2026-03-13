@@ -6,7 +6,7 @@ import AboutView from '@/views/AboutView.vue';
 
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL),
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),//加hush確保開啟成功
   routes: [
     {
       path: '/',
