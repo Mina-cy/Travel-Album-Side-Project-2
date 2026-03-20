@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useLikeStore = defineStore('like', {
   state: () => ({
-    // 這裡記錄所有按過讚的照片 ID
+    //key值叫做user_likes，預設為空陣列，從 LocalStorage 讀取並解析成陣列
     likedIds: JSON.parse(localStorage.getItem('user_likes') || '[]')
   }),
   actions: {
@@ -13,7 +13,7 @@ export const useLikeStore = defineStore('like', {
       } else {
         this.likedIds.splice(index, 1)
       }
-      // 順便存入 LocalStorage，下次開網頁還在
+      // 存入 LocalStorage，轉換成字串
       localStorage.setItem('user_likes', JSON.stringify(this.likedIds))
     }
   }
