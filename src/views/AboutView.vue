@@ -13,8 +13,9 @@ const { width } = useWindowSize();
 
 // 視差效果：讓背景大字隨滑鼠輕微晃動
 const parallax = computed(() => {
-    const mx = (x.value / width.value - 0.5) * 30;
-    return { transform: `translateX(${mx}px)`, transition: 'transform 0.4s ease-out' };
+    const mx = (x.value / width.value - 0.5) * 80;
+    const my = (y.value / width.value - 0.5) * 30;
+    return { transform: `translateX(${mx}px) translateY(${my}px)`, transition: 'transform 0.4s ease-out' };
 });
 const getPhotoUrl = (photo) => {
     return photo ? new URL(`../assets/images/aboutimg/${photo.aboutImgName}`, import.meta.url).href : '';
@@ -148,6 +149,7 @@ onMounted(() => { AOS.refresh(); });
                 Crafted With Passion</span>
         </footer>
     </div>
+    
 </template>
 
 
