@@ -13,7 +13,7 @@ const { width } = useWindowSize();
 
 // 視差效果：讓背景大字隨滑鼠輕微晃動
 const parallax = computed(() => {
-    const mx = (x.value / width.value - 0.5) * 80;
+    const mx = (x.value / width.value - 0.5) * 90;
     const my = (y.value / width.value - 0.5) * 30;
     return { transform: `translateX(${mx}px) translateY(${my}px)`, transition: 'transform 0.4s ease-out' };
 });
@@ -109,7 +109,7 @@ onMounted(() => { AOS.refresh(); });
                         <template #paragraph1>
                             建立這個作品的初衷，是因為我平常喜歡攝影、聽音樂，希望將生活中收集到的「美」結合程式呈現出來。
                         </template>
-                        
+
                         <template #paragraph2>
                             我的個性外向活潑，喜歡與人交流，這讓我在團隊合作中能夠順暢溝通、樂於分享想法；但同時我也保有心思細膩的一面，能夠察覺細節、理解他人的需求。我可以是團隊中帶動氣氛的人，也能在需要的時候靜下來專注投入自己的工作節奏。這樣的特質，讓我無論在獨立作業或團隊協作中，都能找到適合自己的位置，彈性地應對不同的工作情境。
                         </template>
@@ -149,7 +149,7 @@ onMounted(() => { AOS.refresh(); });
                 Crafted With Passion</span>
         </footer>
     </div>
-    
+
 </template>
 
 
