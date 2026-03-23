@@ -14,7 +14,7 @@ const { width } = useWindowSize();
 // 視差效果：讓背景大字隨滑鼠輕微晃動
 const parallax = computed(() => {
     const mx = (x.value / width.value - 0.5) * 90;
-    const my = (y.value / width.value - 0.5) * 30;
+    const my = (y.value / width.value - 0.5) * 60;
     return { transform: `translateX(${mx}px) translateY(${my}px)`, transition: 'transform 0.4s ease-out' };
 });
 const getPhotoUrl = (photo) => {
