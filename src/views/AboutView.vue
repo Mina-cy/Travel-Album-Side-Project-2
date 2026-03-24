@@ -22,7 +22,7 @@ const getPhotoUrl = (photo) => {
 };
 const fixedPic1 = aboutData.find(item => item.id === 1);
 const fixedPic2 = aboutData.find(item => item.id === 2);
-// 隨機照片池（排除 id=1 和 id=2）
+// 隨機照片池
 const randomPool = computed(() =>
     aboutData.filter(item => ![1, 2].includes(item.id))
 );
@@ -135,8 +135,55 @@ onMounted(() => { AOS.refresh(); });
                         </div>
                     </div>
                 </div>
+
+
             </section>
 
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center ">
+                <!-- 左側：視覺照片 -->
+                <div class="lg:col-span-6 relative" data-aos="fade-right" data-aos-duration="1500">
+
+                    <div class="absolute -top-12 left-0 flex items-baseline gap-4">
+                        <span class="text-xs uppercase tracking-[0.4em] text-stone-400 font-sans font-bold">
+                            UIUX program</span>
+                    </div>
+
+                    <!-- 照片容器 -->
+                    <AboutPhotoLeft :img-src="getPhotoUrl(getRandomPic())" />
+
+                    <!-- 裝飾小字 (側邊垂直) -->
+                    <div class="absolute right-0 top-1/2 -rotate-90 origin-right hidden xl:block">
+                        <p class="text-[10px] tracking-[0.6em] uppercase text-stone-300 font-sans font-black">
+                            Captured in Memories // 2026
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 右側：排版內容 -->
+                <div class="lg:col-span-6 flex flex-col justify-center gap-4 xl:gap-6 pl-2 xl:pl-16">
+
+                    <div class="lg:mb-10 xl:mb-4 relative" data-aos="fade-up">
+                        <!-- 裝飾線 -->
+                        <div class="h-[1px] w-30 bg-rose-300/70 mt-12"></div>
+                    </div>
+
+                    <!-- 內文敘述-->
+                    <AboutText>
+                        <template #header>
+                            "系統化學習UIUX，
+                            <br>
+                            產業新尖兵540小時密集訓練。"
+                        </template>
+                        <template #paragraph1>
+                            建立這個作品的初衷，是因為我平常喜歡攝影、聽音樂，希望將生活中收集到的「美」結合程式呈現出來。
+                        </template>
+
+                        <template #paragraph2>
+                            我的個性外向活潑，喜歡與人交流，這讓我在團隊合作中能夠順暢溝通、樂於分享想法；但同時我也保有心思細膩的一面，能夠察覺細節、理解他人的需求。我可以是團隊中帶動氣氛的人，也能在需要的時候靜下來專注投入自己的工作節奏。這樣的特質，讓我無論在獨立作業或團隊協作中，都能找到適合自己的位置，彈性地應對不同的工作情境。
+                        </template>
+                    </AboutText>
+                </div>
+            </section>
         </main>
 
 
