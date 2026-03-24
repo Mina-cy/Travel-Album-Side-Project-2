@@ -185,6 +185,12 @@ onMounted(() => { AOS.refresh(); });
                         </template>
                     </AboutText>
                 </div>
+                <div class="flex gap-6 text-stone-300">
+                    <a :href="iglink" target="_blank" class="hover:text-rose-400 transition-colors"><i
+                            class="fab fa-instagram"></i></a>
+                    <a :href="github" target="_blank" class="hover:text-rose-400 transition-colors"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
             </section>
         </main>
 
