@@ -38,7 +38,7 @@ onMounted(() => { AOS.refresh(); });
 <template>
     <div class="min-h-screen bg-[#FDFBF7] text-stone-800 font-serif overflow-hidden">
 
-        <!-- A. 背景裝飾：超巨大的年份或標題 -->
+        <!-- A. 背景裝飾 -->
         <div class="fixed top-20 -left-10 opacity-[0.04] select-none pointer-events-none" :style="parallax">
             <h1 class="text-[25vw] leading-none uppercase italic font-black">Mina</h1>
         </div>
