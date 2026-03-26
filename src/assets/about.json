@@ -10,5 +10,9 @@
     {
         "id": 3,
         "aboutImgName": "cover3.jpg"
+    },
+    {
+        "id": 4,
+        "aboutImgName": "cover4.png"
     }
 ]

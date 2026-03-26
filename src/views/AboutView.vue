@@ -20,16 +20,10 @@ const parallax = computed(() => {
 const getPhotoUrl = (photo) => {
     return photo ? new URL(`../assets/images/aboutimg/${photo.aboutImgName}`, import.meta.url).href : '';
 };
-const fixedPic1 = aboutData.find(item => item.id === 1);
-const fixedPic2 = aboutData.find(item => item.id === 2);
-// 隨機照片池
-const randomPool = computed(() =>
-    aboutData.filter(item => ![1, 2].includes(item.id))
-);
-const getRandomPic = () => {
-    const pool = randomPool.value;
-    return pool[Math.floor(Math.random() * pool.length)];
-};
+const fixedPic1 = aboutData.find(item => item.id === 1); 
+const fixedPic2 = aboutData.find(item => item.id === 2); 
+const fixedPic3 = aboutData.find(item => item.id === 3); 
+const fixedPic4 = aboutData.find(item => item.id === 4); 
 
 onMounted(() => { AOS.refresh(); });
 </script>
@@ -149,7 +143,7 @@ onMounted(() => { AOS.refresh(); });
                     </div>
 
                     <!-- 照片容器 -->
-                    <AboutPhotoLeft :img-src="getPhotoUrl(getRandomPic())" />
+                    <AboutPhotoLeft :img-src="getPhotoUrl(fixedPic3)" />
 
                     <!-- 裝飾小字 (側邊垂直) -->
                     <div class="absolute right-0 top-1/2 -rotate-90 origin-right hidden xl:block">
@@ -191,6 +185,66 @@ onMounted(() => { AOS.refresh(); });
                     <a :href="github" target="_blank" class="hover:text-rose-400 transition-colors"><i
                             class="fa-brands fa-github"></i></a>
                 </div>
+            </section>
+            
+            <section class=" grid grid-cols-1 lg:grid-cols-12 gap-12 items-center ">
+                <!-- 照片容器 -->
+                <div class="lg:col-span-6 relative pl-2 xl:pl-16 pt-0 order-1 lg:order-2" data-aos="fade-right"
+                    data-aos-duration="1500">
+                    <AboutPhotoRight :img-src="getPhotoUrl(fixedPic4)" />
+                </div>
+
+                <!-- 左側：排版內容 -->
+                <div class="lg:col-span-6 flex flex-col justify-center lg:pl-16 order-2 lg:order-1">
+
+                    <div class="mb-12 relative" data-aos="fade-up">
+                        <!-- 裝飾線 -->
+                        <div class="h-[2px] w-24 bg-rose-300 mt-10"></div>
+                    </div>
+
+                    <!-- 內文敘述-->
+                    <AboutText>
+                        <template #header>
+                            "期末專題報告，
+                            <br>
+                           從0到1完整實作動態網頁。"
+                        </template>
+                        <template #paragraph1>
+                            專案目標：經分析原網站痛點，發現核心用戶為「活動廠商」而非一般球迷。改版重點提升租借服務轉換率，優化資訊架構與操作流程，讓使用者能直覺獲取場地資訊。
+                        </template>
+
+                        <template #paragraph2>
+                            <span class="font-bold">即時篩選系統：</span>
+                            輸入人數及Hashtag標籤，即時比對JSON資料庫，動態更新場地列表，無需重新整理頁面
+                            <br>
+                            <span class="font-bold">跨頁面狀態同步：</span>整合Pinia狀態管理，收藏場地後資料自動同步至合作提案頁面，實現「收藏到提案」無縫銜接。
+                            <br>
+                            <span class="font-bold">SVG繪製：</span>使用客製化繪製洲際棒球場的平面配置，將內外野、休息區、觀眾席等區塊拆成可獨立控制的向量圖層，並透過 hover 變色與資訊提示，提升瀏覽場地資訊時的互動性與沉浸感。                        
+                        </template>
+                    </AboutText>
+
+
+                    <!-- 底部互動：極簡連結 -->
+                    <div class="mt-6 xl:mt-10 flex items-center gap-12" data-aos="fade-up" data-aos-delay="500">
+                        <RouterLink to="/album" class="group flex items-center gap-3">
+                            <span
+                                class="text-[11px] font-sans font-black uppercase tracking-[0.3em] border-b border-stone-800 pb-1 group-hover:text-rose-400 group-hover:border-rose-400 transition-all">
+                                Collection
+                            </span>
+                            <i
+                                class="fas fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform"></i>
+                        </RouterLink>
+
+                        <div class="flex gap-6 text-stone-300">
+                            <a :href="iglink" target="_blank" class="hover:text-rose-400 transition-colors"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a :href="github" target="_blank" class="hover:text-rose-400 transition-colors"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
         </main>
 
